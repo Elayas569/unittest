@@ -17,6 +17,9 @@ jobs:
       - run:
           name : Test
           command: mvn -Dtest=Calculadora* test
+      - run:
+          name: mensaje
+          command: echo All_Test_Have_Pased
       - store_test_results:
           path: target/surefire-reports
       - save_cache:
